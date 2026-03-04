@@ -1,4 +1,7 @@
 package com.bn.milagre.repositories;
 
-public interface MilagreRepository {
+import com.bn.milagre.models.MilagreModel;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MilagreRepository extends JpaRepository<MilagreModel, Long> {
 }
